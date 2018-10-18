@@ -5,99 +5,111 @@
             body {font-family: sans-serif;}
 
 
-            h1 {color: rgb(100, 100, 15);
+            h1 {color: rgb(100, 100, 15 );
+                text-align: center;
                 font-size: 70px;}
             h2 {color: white;}
-            p {color:  gray;}   
-            ul {color:  gray;; };
+            h2black {color: black;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            h2blackBig {color: black;
+                font-size: 50px;
+                font-weight: bold;
+            }
 
-            .song-lyrics { background-color:white; }
+            p {color:  gray;}   
+            ul {color:  gray; }
 
             .header{
                 background-color: white;
-                /* padding: 3px;
-                border: 1px solid red; */
                 display: flex;
-                /* height: 500 vh; */
+                flex-direction: row;
+                flex-wrap: wrap;
             }
 
             .header div{
                 background-color: white;
-                /* margin: 3px;
-                border: 3px solid blue; */
             }
-                .header div.leftmargin{ flex: 1;}
-                .header div.pos1{ flex: 1; text-align: center;}
-                .header div.pos2{ flex: 1; text-align: center;}
-                .header div.pos3{ flex: 1; text-align: center;}
-                .header div.pos4{ flex: 1; text-align: center;}
-                .header div.rightmargin{ flex: 1;}
-
-
-
+            .header div.leftmargin{ flex: 1;}
+            .header div.pos1{ flex: 1; text-align: center;}
+            .header div.pos2{ flex: 1; text-align: center;}
+            .header div.pos3{ flex: 1; text-align: center;}
+            .header div.pos4{ flex: 1; text-align: center;}
+            .header div.rightmargin{ flex: 1;}
 
             .container{
                 background-color: black;
                 /* padding: 3px;
                 border: 5px solid red; */
                 display: flex;
-                /* height: 500 vh; */
+                height: 100%;
+                width: 100%;
+                padding: 5px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
             }
 
             .container div{
-                margin: 3px;
+                text-align: left;
+            }
+
+            .container div.leftmargin{ flex: 1;}
+            .container div.column1{ flex: 2;}
+            .container div.column2{ flex: 2; }
+            .container div.column3{flex: 2;}
+            .container div.rightmargin{flex: 1;}
+            
+            .container-white{
+                background-color: white;
+                height: 100%;
+                width: 100%;
+                padding: 5px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+            }
+
+            .container-white div{
+                /* margin: 3px; */
                 text-align: left;
                 /* border: 10px solid black; */
             }
-                .container div.leftmargin{ flex: 1;}
-                .container div.column1{ flex: 2;}
+            .container-white div.leftmargin{ flex: 1;}
+            .container-white div.column1{ flex: 2;}
+            .container-white div.column2{ flex: 2; }
+            .container-white div.column3{flex: 2;}
+            .container-white div.rightmargin{flex: 1;}
 
-                .container div.column2{ flex: 2; }
-
-                .container div.column3{flex: 2;}
-                    .up { height:  500px;}
-                    .down { 
-                        display: flex;
-                        height:  200px;
-                        background-color:white;
-                        filter:alpha(opacity=50);
-                        opacity: 0.5;
-                        -moz-opacity:0.5;}
-                .container div.rightmargin{flex: 1;}
+            img {
+                max-width:100%;
+                max-height:100%;
+                }
             
-            #klawisz1 { 
-                margin: 0px; 
-                flex: 1;
-                background-color: yellow }
 
-            #klawisz2 { 
-                margin: 0px; 
-                flex: 1;
-                background-color: red }
-
-            #klawisz3 { 
-                flex: 1;
-                margin: 0px; 
-                background-color: blue }    
-            
-                
             .footer{
                 background-color: black;
                 /* padding: 3px;
                 border: 1px solid red; */
                 display: flex;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
                 height: 500 vh;
             }
 
             .footer div{
-                /* margin: 3px;
-                border: 3px solid blue; */
+                background-color: black;
             }
-                .footer div.leftmargin{ flex: 1;}
-                .footer div.pos1{ flex: 1; text-align: center;}
-                .footer div.pos2{ flex: 1; text-align: center;}
-                .footer div.pos3{ flex: 1; text-align: center;}
-                .footer div.pos4{ flex: 1; text-align: center;}
-                .footer div.rightmargin{ flex: 1;}
-        
+            .footer div.leftmargin{ flex: 1;}
+            .footer div.pos1{ flex: 1; text-align: center;}
+            .footer div.pos2{ flex: 1; text-align: center;}
+            .footer div.pos3{ flex: 1; text-align: center;}
+            .footer div.pos4{ flex: 1; text-align: center;}
+            .footer div.rightmargin{ flex: 1;}
+    
             

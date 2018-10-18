@@ -11,132 +11,97 @@
 
     <body>
 
-        <header>
-            <div class ="header">
-
-                <div class = "leftmargin">  
+        <header class ="header">
+        
+                <div class = "pos">  
                 </div>
 
-                <div class = "pos1">
+                <div class = "pos">
                     <i class="icon-star-filled"></i>
                     <a href="index.html">START</a>
                 </div>
 
-                <div class = "pos2">
+                <div class = "pos">
                     <i class="icon-info-circled"></i>
                     <a href="second.html">INSPIRATIONS</a>
                 </div>
 
-                <div class = "pos3">
+                <div class = "pos">
                     <i class="icon-help-circled"></i>
                     <a href="third.html">GALLERY</a>
                 </div>
 
-                <div class = "pos4">
+                <div class = "pos">
                     <i class="icon-mail"></i>
-                    <a href="kontakt.html">MESSAGE</a>
+                    <a href="kontakt.html">CONTACT</a>
                 </div>
 
-                <div class = "rightmargin">
+                <div class = "pos">
                 </div>
 
-            </div>
         </header>
 
         <h1 >cOntAct</h1>
     
-        <div class="container-white">
+        <container class="container-white">
 
-            <div class="leftmargin">
+            <div class="margin-w">
             </div>
 
-            <div class="column1">
-                
-                    <p>Enter your name : </p>
-                    <textarea rows="1" cols="40">
-                            A.....
-                    </textarea>
-
-                    <fieldset>
-                            <legend>Input</legend>
-                            <form>
-                                <div>
-                                    <label for="display-name"> Name:
-                                        <span class="warning">*(Allows only letters.)</span> 
-                                    </label>
-                                    <input type="text" id="display-name" name="ip-display"
-                                            pattern="[A-Za-z\s]+"
-                                            maxlength="5" minlength="2" value="Aa" required />
-                                    <span></span>
-                                </div>
-                                <div>
-                                    <label for="readonly-ip">ReadOnly:</label>
-                                    <input type="text" id="readonly-ip" name="ip-readonly"
-                                            placeholder="I'm read only." readonly />
-                                </div>
-                                <div>
-                                    <label for="disabled-ip">Disabled:</label>
-                                    <input type="text" name="ip-disabled"
-                                            id="disabled-ip"
-                                            value="I am disabled"
-                                            disabled />
-                                </div>
-                                <div>
-                                    <input type="submit" class="submit" value="Submit" />
-                                </div>
-                                
-                            </form>
-                        </fieldset>
+            <div class="column-w">
+                <div class="colorgrey" >
+                    <h2>Send info </h2>
+                </div>
             </div>
 
-            <div class="column2" >
-             
-                <p>Give your email </p>
-                <textarea rows="1" cols="40">
-                        A.....
-                </textarea>
-
+            <div class="column-w" >
+                    <div class="people2" >
+                        <img src="source/napoleon.png"  alt="no img" >
+                    </div>
+                    <h2>Send info </h2>
+               
             </div>
 
-            <div class="column3">
+            <div class="column-w">
 
-              
-                <p>YOUR MASSAGE : </p>
-                <textarea rows="10" cols="40">
-                        At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies. 
-                </textarea>
+                <form action="action_page.php">
+
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                        <label for="lname">Email address : </label>
+                        <input type="email" id="lname" name="email address" placeholder="Your email..">
+                    
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">Poland</option>
+                            <option value="canada">Ukraina</option>
+                            <option value="usa">Hungary</option>
+                        </select>
+                    
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                        
+                </form>
                 
             </div>
 
-            <div class="rightmargin">
+            <div class="margin-w">
             </div>
 
-        </div>
+        </container>
     
            
    
-        <footer>
-                <div class ="footer">
-                        <div class = "leftmargin">
-                                
-                        </div>
-                        <div class = "pos1">
-                                <p>Created by: aboandrus</p>
-                        </div>
-                        <div class = "pos2">
-                                <p>All rights reversed.</p>
-                        </div>
-                        <div class = "pos3">
-                            <p>2018.10.15</p>
-                        </div>
-                        <div class = "pos4">
-                                <p><a href="mailto:someone@example.com">
-                                        someone@example.com</a>.</p>
-                        </div>
-                        <div class = "rightmargin">
-                                
-                        </div>
-                </div>
+        <footer class ="footer">
+            <p>Created by: aboandrus..</p>
+            <p>..All rights reserved..</p>
+            <p>..2018.10.15....</p>
+            <p><a href="mailto:aboandrus@gmail.com">
+                    aboandrus@gmail.com</a>.  </p>
         </footer>
+
     </body>
 </html>

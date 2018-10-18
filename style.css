@@ -1,115 +1,164 @@
 
+html
+{
+    height:100%;
+    width:100%;
+}
+
+body {background-color: white;
+    margin: 0;
+    font-family: sans-serif;}
 
 
-            body {background-color: white;}
-            body {font-family: sans-serif;}
+h1 {color: rgb(100, 100, 15 );
+    text-align: center;
+    font-size: 70px;}
+
+h2 {color: white;}
+
+h2black {color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+h2blackBig {color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+p {color:  gray;}   
+ul {color:  gray; }
+
+.header{
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.pos{flex: 1; text-align: center;}
 
 
-            h1 {color: rgb(100, 100, 15 );
-                text-align: center;
-                font-size: 70px;}
-            h2 {color: white;}
-            h2black {color: black;
-                font-size: 25px;
-                font-weight: bold;
-            }
-            h2blackBig {color: black;
-                font-size: 50px;
-                font-weight: bold;
-            }
-
-            p {color:  gray;}   
-            ul {color:  gray; }
-
-            .header{
-                background-color: white;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-            }
-
-            .header div{
-                background-color: white;
-            }
-            .header div.leftmargin{ flex: 1;}
-            .header div.pos1{ flex: 1; text-align: center;}
-            .header div.pos2{ flex: 1; text-align: center;}
-            .header div.pos3{ flex: 1; text-align: center;}
-            .header div.pos4{ flex: 1; text-align: center;}
-            .header div.rightmargin{ flex: 1;}
-
-            .container{
-                background-color: black;
-                /* padding: 3px;
-                border: 5px solid red; */
-                display: flex;
-                height: 100%;
-                width: 100%;
-                padding: 5px;
-                box-sizing: border-box;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-            }
-
-            .container div{
-                text-align: left;
-            }
-
-            .container div.leftmargin{ flex: 1;}
-            .container div.column1{ flex: 2;}
-            .container div.column2{ flex: 2; }
-            .container div.column3{flex: 2;}
-            .container div.rightmargin{flex: 1;}
-            
-            .container-white{
-                background-color: white;
-                height: 100%;
-                width: 100%;
-                padding: 5px;
-                box-sizing: border-box;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-
-            }
-
-            .container-white div{
-                /* margin: 3px; */
-                text-align: left;
-                /* border: 10px solid black; */
-            }
-            .container-white div.leftmargin{ flex: 1;}
-            .container-white div.column1{ flex: 2;}
-            .container-white div.column2{ flex: 2; }
-            .container-white div.column3{flex: 2;}
-            .container-white div.rightmargin{flex: 1;}
-
-            img {
-                max-width:100%;
-                max-height:100%;
-                }
-            
-
-            .footer{
-                background-color: black;
-                /* padding: 3px;
-                border: 1px solid red; */
-                display: flex;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                height: 500 vh;
-            }
-
-            .footer div{
-                background-color: black;
-            }
-            .footer div.leftmargin{ flex: 1;}
-            .footer div.pos1{ flex: 1; text-align: center;}
-            .footer div.pos2{ flex: 1; text-align: center;}
-            .footer div.pos3{ flex: 1; text-align: center;}
-            .footer div.pos4{ flex: 1; text-align: center;}
-            .footer div.rightmargin{ flex: 1;}
+.peopleIcons { 
+    width: 100%;
+    height: 100%;
     
+    display: flex;
+    justify-content: center; }
+
+.people { 
+    width: 200px;}
+
+.people2 { 
+    width: 100px;}
+
+.container{
+    background-color: black;
+    height: max-content;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.margin{ flex: 1;}
+.column{ flex: 2;}
+
+.container-white{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    /* padding: 5px; */
+    box-sizing: border-box;
+     
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.container-white div{
+    margin: 10xp;
+    border: 3px solid white;
+}
+
+
+.margin-w{ 
+        /* flex: 1; */
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0; 
+    }
+.column-w{ 
+        /* flex: 2; */
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0; }
+
+img {
+    width: 100%;
+    height: auto;
+    }
+
+.footer{
+    background-color: black;
+    height: 500 vh; 
+    font-size: 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+            /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input [type=email]{
+    pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+    required
+}
+
+/* Add a background color and some padding around the form */
+/* .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+} */
+
+.colorgrey{
+    background-color: gray;
+    width: 100%;
+    height: 25%;
+}
+    
+
             

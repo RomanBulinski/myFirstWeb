@@ -203,5 +203,12 @@ input [type=email]{
     height: 25%;
 }
     
+#timer{
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    
+}
 
             

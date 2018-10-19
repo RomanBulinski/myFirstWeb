@@ -9,10 +9,15 @@ body {background-color: white;
     margin: 0;
     font-family: sans-serif;}
 
-
 h1 {color: rgb(100, 100, 15 );
     text-align: center;
     font-size: 70px;}
+
+    @media ( max-width: 400px){
+        h1 { font-size: 40px;}
+    
+    }    
+
 
 h2 {color: white;}
 
@@ -35,9 +40,14 @@ ul {color:  gray; }
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.pos{flex: 1; text-align: center;}
+
+@media ( max-width: 400px){
+    .header { flex-direction: column;}
 
 }
-.pos{flex: 1; text-align: center;}
 
 
 .peopleIcons { 
@@ -59,14 +69,35 @@ ul {color:  gray; }
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 100vh;
 }
 
-.margin{ flex: 1;}
-.column{ flex: 2;}
+@media ( max-width: 500px){
+    .container{ flex-direction: column}
+}
+
+
+
+.container div{
+    margin: 10xp;
+    border: 3px solid black;
+}
+
+.margin{ 
+    /* flex: 1; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0; }
+
+.column{ 
+    /* flex: 2; */
+    flex-grow: 1;
+    flex-shrink: 1000;
+    flex-basis: 0; }
 
 .container-white{
     background-color: white;
@@ -81,6 +112,13 @@ ul {color:  gray; }
     min-height: 100vh;
 }
 
+
+@media ( max-width: 400px){
+    .container-white{ flex-direction: column}
+
+}
+
+
 .container-white div{
     margin: 10xp;
     border: 3px solid white;
@@ -90,7 +128,7 @@ ul {color:  gray; }
 .margin-w{ 
         /* flex: 1; */
         flex-grow: 1;
-        flex-shrink: 1;
+        flex-shrink: 1000;
         flex-basis: 0; 
     }
 .column-w{ 
@@ -100,6 +138,11 @@ ul {color:  gray; }
         flex-basis: 0; }
 
 img {
+    width: 100%;
+    height: auto;
+    }
+    
+video {
     width: 100%;
     height: auto;
     }

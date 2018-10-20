@@ -2,19 +2,18 @@ function validation()
 {
     var form =  document.getElementById('info-form'),
         rules = { // 1
-            'name' : /^[a-z]{2,30}$/i,
+            'name' : /^[A-Z]{1}[a-z]{2,30}$/,
             'email': /^[a-z0-9\._%-]+@[a-z0-9\.-]+\.[a-z]{2,4}$/i,
-            'subject': /^[a-z0-9\._%-]+@[a-z0-9\.-]+\.[a-z]{2,4}$/i,
-           
+            'subject': /^[a-z\s]{2,180}$/i,
         };
 
-    for (var elem in rules) // 2
+    for (var elem in rules) 
     {
         if (form[elem])
         {
-            if (!rules[elem].test(form[elem].value)) // 3
+            if (!rules[elem].test(form[elem].value)) 
             {
-                alert('Box ' + elem + ' is not correct.');
+                alert('The Box " ' + elem + ' " is incorrectly filled.');
                 form[elem].style.background = 'yellow';
                 return false;
             }
@@ -24,6 +23,10 @@ function validation()
             }
         }
     }
-    alert('All boxes are infilled - can send!');
+    alert('Your email has been successfully sent!');
     return true;
 }
+
+
+
+

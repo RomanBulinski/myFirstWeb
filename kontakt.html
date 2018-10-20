@@ -6,6 +6,7 @@
         <title> FirstWebSite </title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="fontello-cf42af72/css/fontello.css" >
+        <script type="text/javascript" src="validator.js"></script>
 
     </head>
 
@@ -69,13 +70,20 @@
 
                     <div class="column-w">
 
-                        <form action="action_page.php">
+                        <!-- <form action="action_page.php" > -->
+                        <form action="#" id="info-form" onsubmit='return validation();'>
 
-                                <label for="fname">First Name</label>
-                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                <label for="name">Name</label>
+                                <input type="text" 
+                                        id="name" 
+                                        name="firstname" 
+                                        placeholder="Enter your name...">
                             
-                                <label for="lname">Email address : </label>
-                                <input type="email" id="lname" name="email address" placeholder="Your email..">
+                                <label for="email">Email address : </label>
+                                <input type="email" 
+                                        id="email" 
+                                        name="email address" 
+                                        placeholder="Give your email...">
                             
                                 <label for="country">Country</label>
                                 <select id="country" name="country">
@@ -85,9 +93,13 @@
                                 </select>
                             
                                 <label for="subject">Subject</label>
-                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                                <textarea id="subject" 
+                                        name="subject" 
+                                        placeholder="Write message for me.." 
+                                        style="height:200px"></textarea>
                             
-                                <input type="submit" value="Submit">
+                                <input  type="submit"
+                                        value="Send">
                                 
                         </form>
                         

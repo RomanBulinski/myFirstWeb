@@ -6,27 +6,11 @@
         <title> FirstWebSite </title>
         <link rel="stylesheet" href="style.css" >
         <link rel="stylesheet" href="fontello-cf42af72/css/fontello.css" >
+
         <meta name="description" content="First website in codecool." />
         <meta name="keywords" content="cocecool, krakow, III, modul " />
         
-        <script type="text/javascript">
-
-            function counter(){
-                var today = new Date();
-                var day = today.getDate();
-                var month = today.getMonth()+1;
-                var year = today.getFullYear();
-                var hour = today.getHours();
-                    if(hour<10){hour = "0"+hour; }
-                var minute = today.getMinutes();
-                    if(minute<10){minute = "0"+minute; }
-                var second = today.getSeconds();
-                    if(second<10){second = "0"+second; }
-                document.getElementById("timer").innerHTML=day+"/"+month+"/"+year+" | "+hour+":"+minute+":"+second;
-                setTimeout("counter()", 1000 )
-            }
-
-        </script>
+        <script type="text/javascript" src="timer.js"></script>
 
     </head>
 
@@ -60,7 +44,6 @@
         </header>
 
  
-
         <container>
 
                 <h1 >mY pHoto web Site</h1>
@@ -71,8 +54,6 @@
                     </div>
                 </div>
    
-
-
                 <div class="container">
 
                     <div class="margin">
@@ -116,7 +97,6 @@
                             </ul>
                     </div> 
                 
-
                     <div class="margin">
                     </div>
 

@@ -14,7 +14,7 @@ function validation()
             if (!rules[elem].test(form[elem].value)) 
             {
                 alert('The Box " ' + elem + ' " is incorrectly filled.');
-                form[elem].style.background = 'yellow';
+                form[elem].style.background = 'grey';
                 return false;
             }
             else

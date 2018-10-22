@@ -5,18 +5,75 @@ html
     width:100%;
 }
 
-body {background-color: white;
-    margin: 0;
-    font-family: sans-serif;}
+a { text-decoration: none; }
 
-h1 {color: rgb(100, 100, 15 );
+/* unvisited link
+a:link {
+    color: red;
+}
+
+visited link
+a:visited {
+    color: white;
+} */
+
+/* mouse over link */
+a:hover { color: hotpink;}
+
+/* selected link */
+a:active { color: black;}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+h1 {color: red;
     text-align: center;
     font-size: 70px;}
 
     @media ( max-width: 400px){
         h1 { font-size: 40px;}
-    
     }    
+
+
+/* .titleOfpage div{
+    margin: 10xp;
+    border: 3px solid black;
+} */
+    
+.titleOfpage{
+    /* background-color: white; */
+    height: 80px;
+    width: 100%;
+    /* padding: 5px; */
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* min-height: 100vh; */
+}   
+
+.title-midle {
+    background-image: url("source/wieden2.jpg");
+    /* filter:alpha(opacity=50);
+    opacity: 0.5; */
+    /* flex: 3; */
+    flex-grow: 3;
+    flex-shrink: 0;
+    flex-basis: 3; 
+}
+
+.title-margin {
+    background-color: white;
+    /* flex: 1; */
+    flex-grow: 1;
+    flex-shrink: 100;
+    flex-basis: 1; 
+}
+
+
 
 
 h2 {color: white;}
@@ -33,8 +90,10 @@ h2blackBig {color: black;
 p {color:  gray;}   
 ul {color:  gray; }
 
+
 .header{
     background-color: white;
+    padding: 5px;
 
     display: flex;
     flex-direction: row;
@@ -46,9 +105,7 @@ ul {color:  gray; }
 
 @media ( max-width: 400px){
     .header { flex-direction: column;}
-
 }
-
 
 .peopleIcons { 
     width: 100%;
@@ -74,13 +131,12 @@ ul {color:  gray; }
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 100vh;
+    
 }
 
 @media ( max-width: 500px){
     .container{ flex-direction: column}
 }
-
-
 
 .container div{
     margin: 10xp;
@@ -89,6 +145,7 @@ ul {color:  gray; }
 
 .margin{ 
     /* flex: 1; */
+    /* background-image: url("source/wieden.jpg"); */
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0; }
@@ -100,7 +157,7 @@ ul {color:  gray; }
     flex-basis: 0; }
 
 .container-white{
-    background-color: white;
+    /* background-color: white; */
     height: 100%;
     width: 100%;
     /* padding: 5px; */
@@ -112,20 +169,17 @@ ul {color:  gray; }
     min-height: 100vh;
 }
 
-
 @media ( max-width: 400px){
     .container-white{ flex-direction: column}
-
 }
-
 
 .container-white div{
     margin: 10xp;
     border: 3px solid white;
 }
 
-
 .margin-w{ 
+        /* background-image: url("source/wieden.jpg"); */
         /* flex: 1; */
         flex-grow: 1;
         flex-shrink: 1000;
@@ -172,7 +226,7 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: rgb(74, 75, 74);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -183,7 +237,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #3d3d3d;
     
 }
 
@@ -194,6 +248,9 @@ input[type=submit]:hover {
 
 
 .colorgrey{
+    background-image: url("source/wieden.jpg");
+    filter:alpha(opacity=80);
+    opacity: 0.5;
     background-color: gray;
     width: 100%;
     height: 25%;

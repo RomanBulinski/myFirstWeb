@@ -6,7 +6,7 @@
         <title> FirstWebSite </title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="fontello-cf42af72/css/fontello.css" >
-        <script type="text/javascript" src="validator.js"></script>
+        <script src="validator.js"></script>
 
     </head>
 
@@ -49,8 +49,9 @@
                         <div class ="title-midle"></div> 
                         <div class="title-margin"> </div>
                 </div>
-
-               <h1 >cOntAct</h1></div> 
+                <br>
+               <h1 >cOntAct</h1> 
+               <br>
 
                 <div class="container-white">
 
@@ -74,19 +75,25 @@
                     <div class="column-w">
 
 
-                        <form action="#" id="info-form" onsubmit='return validation();'>
+                        <form action="#" id="form" onsubmit='return validation2();' >        
 
                                 <label for="name">Name</label>
                                 <input type="text" 
                                         id="name" 
                                         name="firstname" 
-                                        placeholder="Enter your name...">
+                                        placeholder="Enter your name..."
+                                        onChange=name_Is_Filled()
+                                    
+                                        >
                             
-                                <label for="email">Email address : </label>
-                                <input type="email" 
+                                <label for="email">Email address :</label>
+                                <input type="text" 
                                         id="email" 
                                         name="email address" 
-                                        placeholder="Give your email...">
+                                        placeholder="Give your email..."
+                                        onChange=email_Is_Filled()
+
+                                        >
                             
                                 <label for="country">Country</label>
                                 <select id="country" name="country">
@@ -95,16 +102,26 @@
                                     <option value="usa">Hungary</option>
                                 </select>
                             
-                                <label for="subject">Subject</label>
-                                <textarea id="subject" 
-                                        name="subject" 
+                                <label for="subject_text">Subject</label>
+                                <textarea 
+                                        document.write("unblock_send");
+                                        id="subject" 
+                                        name="user_text" 
                                         placeholder="Write message for me.." 
-                                        style="height:200px"></textarea>
+                                        style="height:200px"
+                                        onChange=text_Is_Filled()
+                                    
+                                        >
+                                </textarea>
                             
                                 <input  type="submit"
-                                        value="Send">
-                                
+                                        id="subject_button"
+                                        name="send"
+                                        value="Submit"
+                                        disabled="disabled">
+                                   
                         </form>
+
                         
                     </div>
 
